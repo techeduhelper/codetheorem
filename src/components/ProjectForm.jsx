@@ -37,7 +37,7 @@ const ProjectForm = ({ handleClose }) => {
 
   return (
     <>
-      <div className='fixed flex z-10 top-0 left-0 w-full h-full bg-[#000000b3]  justify-center  items-center'>
+      <div className='fixed flex z-50 top-0 left-0 w-full h-full bg-[#000000b3]  justify-center  items-center'>
         <div className='bg-white p-[20px] rounded-[8px] lg:w-1/2 w-full lg:mx-0 mx-4 flex gap-[10px] flex-col'>
           <div className='flex flex-row items-center justify-between'>
             <span className='font-Gilroy_Semibold text-[1.4rem]'>
