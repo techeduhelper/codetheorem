@@ -21,7 +21,7 @@ export default {
 
     extend: {
       boxShadow: {
-        sidebar_shadow: "rgba(0, 0, 0, 0.04) 0px 3px 5px",
+        sidebar_shadow: "rgba(0, 0, 0, 0.08) 0px 3px 5px",
         card_shadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;",
         project_shadow: " rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;",
       },

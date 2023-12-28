@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import data from "../constant/ProjectData";
 import ProjectForm from "./ProjectForm";
+import head from "../constant/TableHead";
 
 const Projects = () => {
   const [toggle, setToggle] = useState(false);
@@ -55,24 +56,17 @@ const Projects = () => {
           </div>
         </div>
         <div className='mt-[25px] overflow-x-auto'>
-          <table
-            id='dataTable'
-            className='border-collapse w-full overflow-x-auto '
-          >
+          <table className='border-collapse w-full table-auto'>
             <thead className='border-b-[#AAAAAA] border-b'>
               <tr className=''>
-                <th className='border-none p-[15px] text-left font-Gilroy_Medium '>
-                  Project Name
-                </th>
-                <th className='border-none p-[15px] text-left font-Gilroy_Medium '>
-                  Customer
-                </th>
-                <th className='border-none p-[15px] text-left font-Gilroy_Medium '>
-                  Sent Date
-                </th>
-                <th className='border-none p-[15px] text-left font-Gilroy_Medium '>
-                  Amount
-                </th>
+                {head.map((n, i) => (
+                  <th
+                    key={i}
+                    className='border-none p-[15px] text-left font-Gilroy_Medium whitespace-nowrap'
+                  >
+                    {n.elment}
+                  </th>
+                ))}
                 <th className='border-none p-[15px] text-left font-Gilroy_Medium ' />
               </tr>
             </thead>
@@ -82,19 +76,19 @@ const Projects = () => {
                   key={i}
                   className={`${i % 2 === 0 ? "bg-white" : "bg-[#F9FBFB]"}`}
                 >
-                  <td className='border-none p-[15px] text-left font-Gilroy_Semibold text-[#8E90A6] font-[1rem]'>
+                  <td className='border-none p-[15px] whitespace-nowrap text-left font-Gilroy_Semibold text-[#8E90A6] font-[1rem]'>
                     {d.projectName}
                   </td>
-                  <td className='border-none p-[15px] text-left font-Gilroy_Semibold text-[#8E90A6] font-[1rem]'>
+                  <td className='border-none p-[15px] whitespace-nowrap text-left font-Gilroy_Semibold text-[#8E90A6] font-[1rem]'>
                     {d.customer}
                   </td>
-                  <td className='border-none p-[15px] text-left font-Gilroy_Semibold text-[#8E90A6] font-[1rem]'>
+                  <td className='border-none p-[15px] whitespace-nowrap text-left font-Gilroy_Semibold text-[#8E90A6] font-[1rem]'>
                     {d.sentDate}
                   </td>
-                  <td className='border-none p-[15px] text-left font-Gilroy_Semibold text-[#8E90A6] font-[1rem]'>
+                  <td className='border-none p-[15px] whitespace-nowrap text-left font-Gilroy_Semibold text-[#8E90A6] font-[1rem]'>
                     $ {d.Amount}
                   </td>
-                  <td className='border-none p-[15px] text-left font-Gilroy_Semibold text-[#8E90A6] font-[1rem]'>
+                  <td className='border-none p-[15px] whitespace-nowrap text-left font-Gilroy_Semibold text-[#8E90A6] font-[1rem]'>
                     {d.status === "SENT" ? (
                       <span className='text-[#18C3D9] justify-center flex rounded-[20px] bg-[#E5F7FB] px-2 py-1 '>
                         {d.status}

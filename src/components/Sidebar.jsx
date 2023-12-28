@@ -21,7 +21,7 @@ const Sidebar = ({ handleClose }) => {
           </div>
           <Link
             to={"/"}
-            className='w-full flex justify-center py-[40px] mb-[px] hover:cursor-pointer border-b border-b-border_color'
+            className='w-full flex justify-center py-[40px] mb-[px] hover:cursor-pointer active:text-purple-500 border-b border-b-border_color'
           >
             <div>
               <svg
