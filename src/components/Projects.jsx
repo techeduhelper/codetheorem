@@ -48,7 +48,7 @@ const Projects = () => {
           <div className='button-container'>
             <button
               onClick={handleOpen}
-              className='py-[10px] px-[15px] border-none rounded-[10px] bg-[#1CD2AD] text-[#ffffff] text-[1.1rem] font-Gilroy_Semibold cursor-pointer shadow-project_shadow'
+              className='py-[10px] px-[15px] border-none rounded-[10px] bg-[#1CD2AD] active:bg-[#1cd2c6] hover:bg-[#1cd2c6] text-[#ffffff] text-[1.1rem] font-Gilroy_Semibold cursor-pointer shadow-project_shadow'
             >
               Create
             </button>
@@ -77,7 +77,7 @@ const Projects = () => {
               </tr>
             </thead>
             <tbody>
-              {data.map((d, i) => (
+              {data.reverse().map((d, i) => (
                 <tr
                   key={i}
                   className={`${i % 2 === 0 ? "bg-white" : "bg-[#F9FBFB]"}`}

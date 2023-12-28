@@ -4,7 +4,7 @@ const Card = () => {
   return (
     <>
       <div className='grid lg:grid-cols-4 md:grid-cols-2  gap-[20px] lg:mt-[2rem] mt-[1.1rem] lg:mr-[30px]'>
-        <div className='bg-[#ffffff] h-[116px] rounded-[8px] relative shadow-card_shadow  bg-gradient-to-r from-white to-purple-50 via-white'>
+        <div className='bg-[#ffffff] cursor-pointer h-[116px] rounded-[8px] relative shadow-card_shadow  bg-gradient-to-r from-white to-purple-50 via-white'>
           <div className='flex flex-col text-[1.5rem] font-bold font-Gilroy_bold pt-[20px] pl-[20px] gap-[8px]'>
             <span>$ 2,77,120</span>
             <span
@@ -36,7 +36,7 @@ const Card = () => {
             />
           </svg>
         </div>
-        <div className='bg-[#ffffff] h-[116px] rounded-[8px] relative shadow-card_shadow  bg-gradient-to-r from-white to-pink-50 via-white'>
+        <div className='bg-[#ffffff] cursor-pointer h-[116px] rounded-[8px] relative shadow-card_shadow  bg-gradient-to-r from-white to-pink-50 via-white'>
           <div className='flex flex-col text-[1.5rem] font-bold font-Gilroy_bold pt-[20px] pl-[20px] gap-[8px]'>
             <span>$ 60,100</span>
             <span
@@ -72,7 +72,7 @@ const Card = () => {
             </g>
           </svg>
         </div>
-        <div className='bg-[#ffffff] h-[116px] rounded-[8px] relative shadow-card_shadow  bg-gradient-to-r from-white to-orange-50 via-white'>
+        <div className='bg-[#ffffff] h-[116px] cursor-pointer rounded-[8px] relative shadow-card_shadow  bg-gradient-to-r from-white to-orange-50 via-white'>
           <div className='flex flex-col text-[1.5rem] font-bold font-Gilroy_bold pt-[20px] pl-[20px] gap-[8px]'>
             <span>$ 57,230</span>
             <span
@@ -114,7 +114,7 @@ const Card = () => {
             </g>
           </svg>
         </div>
-        <div className='bg-[#ffffff] h-[116px] rounded-[8px] relative shadow-card_shadow  bg-gradient-to-r from-white to-blue-50 via-white'>
+        <div className='bg-[#ffffff] h-[116px] cursor-pointer rounded-[8px] relative shadow-card_shadow  bg-gradient-to-r from-white to-blue-50 via-white'>
           <div className='flex flex-col text-[1.5rem] font-bold font-Gilroy_bold pt-[20px] pl-[20px] gap-[8px]'>
             <span>$ 1,60,124</span>
             <span

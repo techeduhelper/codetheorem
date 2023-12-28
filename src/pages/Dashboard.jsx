@@ -4,7 +4,7 @@ import Card from "../components/Card";
 import Projects from "../components/Projects";
 import Events from "../components/Events";
 
-const Dashboard = ({ handleOpen, handleClose }) => {
+const Dashboard = ({ handleClose }) => {
   return (
     <>
       <div className='body-container flex flex-col relative bg-[#F5F5F5]'>
@@ -15,31 +15,33 @@ const Dashboard = ({ handleOpen, handleClose }) => {
                 Hi, Welcome back <span className='text-[#1CD2AD]'>Robert!</span>
               </span>
             </div>
-            <div className='flex gap-[8px] justify-between'>
-              <div className='flex flex-row gap-3 items-center '>
-                <div className='lg:min-w-[214px] min-w-full bg-[#ffffff1a] py-[10px] px-[16px] rounded-[100px] text-[#fff] text-[14px] flex flex-row gap-[8px] relative'>
-                  <svg
-                    width={20}
-                    height={20}
-                    viewBox='0 0 31 31'
-                    fill='none'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      d='M27.3334 30.0417L18.0834 20.7917C17.25 21.4306 16.2917 21.9444 15.2084 22.3333C14.125 22.7222 12.9723 22.9167 11.75 22.9167C8.66671 22.9167 6.0556 21.84 3.91671 19.6867C1.77782 17.5344 0.708374 14.9167 0.708374 11.8333C0.708374 8.75 1.77782 6.13167 3.91671 3.97833C6.0556 1.82611 8.66671 0.75 11.75 0.75C14.8334 0.75 17.4517 1.82611 19.605 3.97833C21.7573 6.13167 22.8334 8.75 22.8334 11.8333C22.8334 13.0556 22.6462 14.2083 22.2717 15.2917C21.8962 16.375 21.3889 17.3194 20.75 18.125L30.0417 27.4583C30.375 27.7917 30.5417 28.2156 30.5417 28.73C30.5417 29.2433 30.3611 29.6806 30 30.0417C29.6389 30.4028 29.1878 30.5833 28.6467 30.5833C28.1045 30.5833 27.6667 30.4028 27.3334 30.0417ZM11.75 19.0833C13.7778 19.0833 15.5 18.3817 16.9167 16.9783C18.3334 15.5761 19.0417 13.8611 19.0417 11.8333C19.0417 9.80556 18.3334 8.09 16.9167 6.68667C15.5 5.28444 13.7778 4.58333 11.75 4.58333C9.72226 4.58333 8.00726 5.28444 6.60504 6.68667C5.20171 8.09 4.50004 9.80556 4.50004 11.8333C4.50004 13.8611 5.20171 15.5761 6.60504 16.9783C8.00726 18.3817 9.72226 19.0833 11.75 19.0833Z'
-                      fill='#AAAAAA'
+            <div className='flex gap-[8px] justify-between h-[40px]'>
+              <div className='flex flex-row gap-3 items-center cursor-pointer'>
+                <div className=' z-10 lg:min-w-[214px] min-w-full bg-[#ffffff1a] px-[10px] rounded-[100px] text-[#fff] text-[14px] flex flex-row  items-center gap-[8px] relative'>
+                  <div className='flex flex-row items-center'>
+                    <svg
+                      width={15}
+                      height={15}
+                      viewBox='0 0 31 31'
+                      fill='none'
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
+                      <path
+                        d='M27.3334 30.0417L18.0834 20.7917C17.25 21.4306 16.2917 21.9444 15.2084 22.3333C14.125 22.7222 12.9723 22.9167 11.75 22.9167C8.66671 22.9167 6.0556 21.84 3.91671 19.6867C1.77782 17.5344 0.708374 14.9167 0.708374 11.8333C0.708374 8.75 1.77782 6.13167 3.91671 3.97833C6.0556 1.82611 8.66671 0.75 11.75 0.75C14.8334 0.75 17.4517 1.82611 19.605 3.97833C21.7573 6.13167 22.8334 8.75 22.8334 11.8333C22.8334 13.0556 22.6462 14.2083 22.2717 15.2917C21.8962 16.375 21.3889 17.3194 20.75 18.125L30.0417 27.4583C30.375 27.7917 30.5417 28.2156 30.5417 28.73C30.5417 29.2433 30.3611 29.6806 30 30.0417C29.6389 30.4028 29.1878 30.5833 28.6467 30.5833C28.1045 30.5833 27.6667 30.4028 27.3334 30.0417ZM11.75 19.0833C13.7778 19.0833 15.5 18.3817 16.9167 16.9783C18.3334 15.5761 19.0417 13.8611 19.0417 11.8333C19.0417 9.80556 18.3334 8.09 16.9167 6.68667C15.5 5.28444 13.7778 4.58333 11.75 4.58333C9.72226 4.58333 8.00726 5.28444 6.60504 6.68667C5.20171 8.09 4.50004 9.80556 4.50004 11.8333C4.50004 13.8611 5.20171 15.5761 6.60504 16.9783C8.00726 18.3817 9.72226 19.0833 11.75 19.0833Z'
+                        fill='#AAAAAA'
+                      />
+                    </svg>
+                    <input
+                      type='text'
+                      placeholder='Search...'
+                      className=' outline-none text-[1rem] bg-transparent border-none text-white'
                     />
-                  </svg>
-                  <input
-                    type='text'
-                    className='absolute outline-none bg-transparent border-none text-white'
-                  />
-                  <span>Search...</span>
+                  </div>
                 </div>
               </div>
 
               <div className='flex flex-row gap-[8px]'>
-                <div className='w-[40px] h-[40px] bg-[#ffffff1a] flex items-center justify-center rounded-full relative'>
+                <div className='w-[40px] h-[40px] bg-[#ffffff1a] flex items-center cursor-pointer z-10 active:bg-[#ffffff12] active:rounded-full justify-center rounded-full relative'>
                   <div>
                     <svg
                       width={24}
@@ -79,7 +81,7 @@ const Dashboard = ({ handleOpen, handleClose }) => {
                     />
                   </div>
                 </div>
-                <div className='w-[40px] h-[40px]'>
+                <div className='w-[40px] h-[40px] cursor-pointer z-10 active:bg-slate-50 active:rounded-full'>
                   <img
                     src={profileimg}
                     alt='avatar'

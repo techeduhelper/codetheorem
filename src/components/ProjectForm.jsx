@@ -102,7 +102,7 @@ const ProjectForm = ({ handleClose }) => {
             </div>
             <br />
             <input
-              className='py-[10px] px-[15px] text-[1.1rem] border-none rounded-[10px] cursor-pointer bg-green-600 text-[#ffffff] font-Gilroy_Semibold'
+              className='py-[10px] px-[15px] text-[1.1rem] border-none rounded-[10px] cursor-pointer active:bg-green-600 bg-green-700 hover:bg-green-700 text-[#ffffff] font-Gilroy_Semibold'
               type='submit'
               defaultValue='Submit'
             />
