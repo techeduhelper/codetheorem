@@ -4,7 +4,7 @@ import Sidebar from "../components/Sidebar";
 const Layout = ({ visible, isLargeScreen, handleClose, handleOpen }) => {
   return (
     <div className='flex flex-row  w-full min-h-[100vh]'>
-      <div className='fixed md:static lg:z-10 z-30'>
+      <div className='fixed md:static md:z-10 z-30'>
         {isLargeScreen || visible ? (
           <Sidebar handleClose={handleClose} />
         ) : null}

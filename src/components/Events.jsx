@@ -28,7 +28,7 @@ const Events = () => {
               </div>
 
               <div>
-                <button className='bg-[#1E88E5] px-[8px] py-[4px] text-white rounded-[8px] active:bg-[#1e3fe5]'>
+                <button className='bg-[#1E88E5] px-[6px] lg:px-[8px] py-[4px] lg:text-[1rem] text-[0.8rem] text-white rounded-[8px] active:bg-[#1e3fe5]'>
                   Wish
                 </button>
               </div>
@@ -38,18 +38,18 @@ const Events = () => {
             <div className='flex flex-row items-center justify-between w-full mt-[20px] gap-[15px]'>
               <div className='flex flex-row gap-2 items-center'>
                 <div className='cursor-pointer hover:brightness-[108%]'>
-                  <img src={event2pic} alt='' className='brightness-125' />
+                  <img src={event2pic} alt='' className='brightness-125 ' />
                 </div>
                 <div className='flex flex-col justify-center'>
                   <span className='lg:text-[1rem]'>Annette Black</span>
-                  <div className='flex lg:flex-row items-center justify-center gap-1 lg:gap-2 text-[#1E88E5] text-[14px]'>
-                    <span>🎉Joining Us</span>
+                  <div className='flex lg:flex-row  items-center justify-center lg:gap-2 text-[#1E88E5] text-[14px]'>
+                    <span className='whitespace-nowrap'>🎉Joining Us</span>
                     <div className='w-[4px] h-[4px] bg-[#C7C8D9] rounded-full'></div>
                     <span className='text-[#555770]'>Today</span>
                   </div>
                 </div>
               </div>
-              <div className='bg-[#1E88E5] px-[6px] lg:px-[] py-[4px] text-white rounded-[8px] active:bg-[#1e3fe5] cursor-pointer'>
+              <div className='bg-[#1E88E5] px-[6px] lg:px-[8px] py-[4px] lg:text-[1rem] text-[0.8rem] text-white  rounded-[8px] active:bg-[#1e3fe5] cursor-pointer'>
                 Congratulations
               </div>
             </div>
