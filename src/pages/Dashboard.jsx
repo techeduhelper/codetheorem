@@ -11,7 +11,7 @@ const Dashboard = ({ handleClose }) => {
         <div className='bg-[#121E48] h-[245px]'>
           <div className='flex lg:flex-row flex-col-reverse lg:gap-0 gap-3 justify-between mt-[32px] px-[20px]'>
             <div className='text-[1.5rem] font-Gilroy_Medium'>
-              <span className='text-[#ffffff]'>
+              <span className='text-[#ffffff] '>
                 Hi, Welcome back <span className='text-[#1CD2AD]'>Robert!</span>
               </span>
             </div>

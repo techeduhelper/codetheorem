@@ -28,7 +28,7 @@ const Events = () => {
               </div>
 
               <div>
-                <button className='bg-[#1E88E5] px-[6px] lg:px-[8px] py-[4px] lg:text-[1rem] text-[0.8rem] text-white rounded-[8px] active:bg-[#1e3fe5]'>
+                <button className='bg-[#1E88E5] px-[6px] lg:px-[8px] py-[6px] lg:text-[1rem] text-[0.8rem] text-white rounded-[8px] active:bg-[#1e3fe5]'>
                   Wish
                 </button>
               </div>
@@ -49,7 +49,7 @@ const Events = () => {
                   </div>
                 </div>
               </div>
-              <div className='bg-[#1E88E5] px-[6px] lg:px-[8px] py-[4px] lg:text-[1rem] text-[0.8rem] text-white  rounded-[8px] active:bg-[#1e3fe5] cursor-pointer'>
+              <div className='bg-[#1E88E5] px-[6px] lg:px-[8px] py-[6px] lg:text-[1rem] text-[0.8rem] text-white  rounded-[8px] active:bg-[#1e3fe5] cursor-pointer'>
                 Congratulations
               </div>
             </div>
