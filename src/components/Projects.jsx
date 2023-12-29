@@ -11,7 +11,7 @@ const Projects = () => {
     const storedData = localStorage.getItem("myData");
     if (storedData) {
       const parsedData = JSON.parse(storedData);
-      setData(parsedData);
+      setData(parsedData.reverse());
     }
   }, 2000);
 
@@ -27,7 +27,7 @@ const Projects = () => {
   const deleteProject = (index) => {
     const newData = [...data];
     newData.splice(index, 1);
-    setData(newData);
+    setData(newData.reverse());
     localStorage.setItem("myData", JSON.stringify(newData));
   };
 
