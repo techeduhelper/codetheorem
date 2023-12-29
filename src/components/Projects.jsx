@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import data from "../constant/ProjectData";
 import ProjectForm from "./ProjectForm";
 import head from "../constant/TableHead";
 
@@ -20,7 +19,7 @@ const Projects = () => {
     const storedData = localStorage.getItem("myData");
     if (storedData) {
       const parsedData = JSON.parse(storedData);
-      setData(parsedData);
+      setData(parsedData.reverse());
     }
   }, []);
 
@@ -71,7 +70,7 @@ const Projects = () => {
               </tr>
             </thead>
             <tbody>
-              {data.reverse().map((d, i) => (
+              {data?.map((d, i) => (
                 <tr
                   key={i}
                   className={`${i % 2 === 0 ? "bg-white" : "bg-[#F9FBFB]"}`}
